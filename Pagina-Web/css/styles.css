@@ -1,0 +1,151 @@
+h6 {
+    font-size: 45px;
+    color: rgb(0, 199, 199);
+}
+
+ul{
+    list-style: none;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 100vh;
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#final button{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color:blue;
+    font-weight: bold;
+    color:black;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#target {
+    padding-top: 50px;
+}
+
+.container{
+    padding-top: 4%;
+}
+
+.p1 {
+    font-size: 26px;
+    color: aqua;
+    font-weight: bold;
+}
+
+.boton{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color:blue;
+    font-weight: bold;
+    color:black;
+}
+
+.boton:hover{
+    background-color:blue;
+    color: black;
+}
+
+.nav{
+    background-color: blue;
+    max-height: 60px;
+}
+
+#menu-de {
+    margin-top: -12px;
+    margin-right: 10px;
+}
+
+.mymodal{
+    background-color:blue;
+    color: aliceblue;
+}
+
+.mymodal2{
+    background-color:blue;
+    color: aliceblue;
+}
+
+.dropdown-menu{
+    background-color:blue;
+}
+
+.dropdown-item{
+    color: aliceblue;
+}
+
+.btn{
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 22px;
+    color: brown;
+    margin-top: 10px;
+}
+
+#menu1{
+    color: aliceblue;
+}
+
+.menu {
+    margin: -10px;
+}
+
+.desplegable:hover{
+    color: aliceblue;
+}
+
+#busqueda {
+    font-size: 14px;
+}
+
+.button, .button:focus{
+    border-color: aliceblue;
+    background-color: blue;
+    color: aliceblue;
+
+}
+
+.button:hover {
+    background-color:black;
+    color: aliceblue;
+    border-color: aliceblue;
+}
+
+@media (max-width: 991px){
+    #icono {
+        margin-top: -14px;
+    }
+
+    h1 {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+}
