@@ -1,0 +1,13 @@
+a{
+    margin-top: 25px;
+    position: absolute;
+}
+
+.uk-button{
+    border-radius: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 8px;
+    color: aliceblue;
+    background-color: brown;
+}

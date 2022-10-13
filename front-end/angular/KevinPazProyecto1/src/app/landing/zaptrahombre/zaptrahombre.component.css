@@ -1,0 +1,646 @@
+.container{
+    margin-top: 50px;
+}
+
+.descuento {
+    color: aliceblue;
+    background-color: brown;
+    margin-left: 141px;
+    padding-right: 3px;
+    font-size: 18px;
+    margin-bottom: -62px;
+}
+
+.descuento2 {
+    color: aliceblue;
+    background-color: brown;
+    margin-left: 141px;
+    padding-right: 3px;
+    font-size: 18px;
+    margin-bottom: -73px;
+}
+
+#star{
+    background-color: chartreuse;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+#star2{
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+#star1{
+    background-color: chartreuse;
+    border-radius: 10px;
+    margin: 2px;
+    margin-top: 14px;
+}
+
+#star3{
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.puntaje {
+    font-size: 18px;
+    margin-bottom: -18px;
+    margin-top: -24px;
+}
+
+.precio {
+    color: currentColor;
+    font-size: 20px;
+    font-family: serif;
+    padding-top: 28px;
+}
+
+.precio2 {
+    color: currentColor;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.precio3 {
+    color: currentColor;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.precio4 {
+    color: currentColor;
+    font-size: 20px;
+    font-family: serif;
+    padding-top: 16px;
+}
+
+.card-text {
+    color: brown;
+    font-size: 25px;
+    font-family: fantasy;
+    margin-top: -24px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding-left: 81px;
+    padding-right: 80px;
+    font-size: 18px;
+}
+
+.card{
+    width: 14rem;
+    height: 346px;
+}
+
+@media (max-width:991px){
+    .card{
+        width: 10rem;
+        height: 246px;
+    }
+
+    .titulo{
+        font-size: 12px;
+        padding-top: 6px;
+    }
+
+    .titulo2{
+        font-size: 12px;
+        padding-top: 7px;
+    }
+
+    .descuento {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 98px;
+        margin-top: -5px;
+        padding-right: 2px;
+        font-size: 10px;
+        margin-bottom: -62px;
+    }
+
+    .descuento2 {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 98px;
+        margin-top: -5px;
+        padding-right: 2px;
+        font-size: 10px;
+        margin-bottom: -70px;
+    }
+
+    #star{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    
+    #star2{
+        background-color:darkgray;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    
+    #star1{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 0px;
+        margin-top: 11px;
+        
+    }
+    
+    #star3{
+        background-color: darkgray;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    
+    .puntaje {
+        font-size: 8px;
+        margin-bottom: -16px;
+        margin-top: -15px;
+    }
+    
+    .precio {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 20px;
+    }
+    
+    .precio2 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 1px;
+    }
+    
+    .precio3 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+    }
+    
+    .precio4 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 10px;
+    }
+    
+    .card-text {
+        color: brown;
+        font-size: 16px;
+        font-family: fantasy;
+        margin-top: -24px;
+        margin-bottom: 5px;
+    }
+    
+    .btn {
+        padding-left: 53px;
+        padding-right: 53px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:767px){
+    .card{
+        width: 16rem;
+        height: 365px;
+    }
+
+    .titulo{
+        font-size: 18px;
+    }
+
+    .titulo2{
+        font-size: 18px;
+    }
+
+    .descuento {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 171px;
+        margin-top: -4px;
+        padding-right: 4px;
+        font-size: 18px;
+        margin-bottom: -71px;
+    }
+
+    .descuento2 {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 171px;
+        margin-top: -4px;
+        padding-right: 4px;
+        font-size: 18px;
+        margin-bottom: -82px;
+    }
+
+    #star{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 2px;
+    }
+    
+    #star2{
+        background-color:darkgray;
+        border-radius: 10px;
+        margin: 2px;
+    }
+    
+    #star1{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 2px;
+        margin-top: 17px;
+    }
+    
+    #star3{
+        background-color: darkgray;
+        border-radius: 10px;
+        margin: 2px;
+    }
+    
+    .puntaje {
+        font-size: 18px;
+        margin-bottom: -16px;
+        margin-top: -24px;
+    }
+    
+    .precio {
+        color: currentColor;
+        font-size: 24px;
+        font-family: serif;
+        padding-top: 32px;
+    }
+    
+    .precio2 {
+        color: currentColor;
+        font-size: 24px;
+        font-family: serif;
+        padding-top: 0px;
+    }
+    
+    .precio3 {
+        color: currentColor;
+        font-size: 24px;
+        font-family: serif;
+    }
+    
+    .precio4 {
+        color: currentColor;
+        font-size: 24px;
+        font-family: serif;
+        padding-top: 18
+        px;
+    }
+    
+    .card-text {
+        color: brown;
+        font-size: 26px;
+        font-family: fantasy;
+        margin-top: -24px;
+        margin-bottom: 5px;
+    }
+    
+    .btn {
+        padding-left: 98px;
+        padding-right: 97px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:530px){
+    .card{
+        width: 12rem;
+        height: 275px;
+    }
+
+    .titulo{
+        font-size: 12px;
+        padding-top: 11px;
+    }
+    .titulo2{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+
+    .descuento {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 120px;
+        padding-right: 2px;
+        margin-top: -8px;
+        font-size: 14px;
+        margin-bottom: -71px;
+    }
+
+    .descuento2 {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 120px;
+        margin-top: -8px;
+        padding-right: 2px;
+        font-size: 14px;
+    }
+
+    #star{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 1px;
+    }
+    
+    #star2{
+        background-color:darkgray;
+        border-radius: 10px;
+        margin: 1px;
+    }
+    
+    #star1{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 1px;
+        margin-top: 11px;
+        
+    }
+    
+    #star3{
+        background-color: darkgray;
+        border-radius: 10px;
+        margin: 1px;
+    }
+
+    .puntaje {
+        font-size: 12px;
+        margin-bottom: -16px;
+        margin-top: -20px;
+    }
+
+    .precio {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 21px;
+    }
+    
+    .precio2 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 0px;
+    }
+    
+    .precio3 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+    }
+    
+    .precio4 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 11px;
+    }
+
+    .card-text {
+        color: brown;
+        font-size: 16px;
+        font-family: fantasy;
+        margin-top: -24px;
+        margin-bottom: 5px;
+    }
+    
+    .btn {
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:400px){
+    .card{
+        width: 10rem;
+        height: 240px;
+    }
+
+    .titulo{
+        font-size: 10px;
+        padding-top: 14px;
+        
+    }
+
+    .titulo2{
+        font-size: 10px;
+        padding-top: 19px;
+    }
+
+    .descuento {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 92px;
+        margin-top: -7px;
+        padding-right: 2px;
+        font-size: 12px;
+        margin-bottom: -71px;
+    }
+
+    .descuento2 {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 92px;
+        margin-top: -7px;
+        padding-right: 2px;
+        font-size: 12px;
+        margin-bottom: -82px;
+    }
+
+
+    #star{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    
+    #star2{
+        background-color:darkgray;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    
+    #star1{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: 0px;
+        margin-top: 10px;
+        
+    }
+    
+    #star3{
+        background-color: darkgray;
+        border-radius: 10px;
+        margin: 0px;
+    }
+
+    .puntaje {
+        font-size: 8px;
+        margin-bottom: -16px;
+        margin-top: -15px;
+    }
+
+    .precio {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 20px;
+    }
+    
+    .precio2 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 0px;
+    }
+    
+    .precio3 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+    }
+    
+    .precio4 {
+        color: currentColor;
+        font-size: 14px;
+        font-family: serif;
+        padding-top: 11px;
+    }
+
+    .card-text {
+        color: brown;
+        font-size: 16px;
+        font-family: fantasy;
+        margin-top: -24px;
+        margin-bottom: 5px;
+    }
+    
+    .btn {
+        padding-left: 54px;
+        padding-right: 54px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:330px){
+    .card{
+        width: 8rem;
+        height: 210px;
+    }
+
+    .titulo{
+        font-size: 8px;
+        padding-top: 19px;
+    }
+
+    .titulo2{
+        font-size: 8px;
+        padding-top: 13px;
+    }
+
+    .descuento {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 66px;
+        margin-top: -7px;
+        padding-right: 2px;
+        font-size: 10px;
+        margin-bottom: -71px;
+    }
+
+    .descuento2 {
+        color: aliceblue;
+        background-color: brown;
+        margin-left: 66px;
+        margin-top: -7px;
+        padding-right: 2px;
+        font-size: 10px;
+        margin-bottom: -71px;
+    }
+
+
+    #star{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: -1px;
+    }
+    
+    #star2{
+        background-color:darkgray;
+        border-radius: 10px;
+        margin: -1px;
+    }
+    
+    #star1{
+        background-color: chartreuse;
+        border-radius: 10px;
+        margin: -1px;
+        margin-top: 10px;
+        
+    }
+    
+    #star3{
+        background-color: darkgray;
+        border-radius: 10px;
+        margin: -1px;
+    }
+
+    .puntaje {
+        font-size: 8px;
+        margin-bottom: 0px;
+        margin-top: -31px;
+    }
+
+    .precio {
+        color: currentColor;
+        font-size: 12px;
+        font-family: serif;
+        padding-top: 20px;
+    }
+    
+    .precio2 {
+        color: currentColor;
+        font-size: 12px;
+        font-family: serif;
+        padding-top: 0px;
+    }
+    
+    .precio3 {
+        color: currentColor;
+        font-size: 12px;
+        font-family: serif;
+    }
+    
+    .precio4 {
+        color: currentColor;
+        font-size: 12px;
+        font-family: serif;
+        padding-top: 11px;
+    }
+
+    .card-text {
+        color: brown;
+        font-size: 14px;
+        font-family: fantasy;
+        margin-top: -24px;
+        margin-bottom: 5px;
+    }
+    
+    .btn {
+        padding-left: 39px;
+        padding-right: 39px;
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,227 @@
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <ul class="uk-navbar-nav">
+          <li></li>
+          <img id="logotipo" src="../../assets/logo.png" width="60" height="30" alt="">
+          <li class="uk-active">
+              <a style="color:aliceblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="#">
+                  <div>
+                      ¡No te pierdas nuestros nuevos modelos
+                      <div class="uk-navbar-subtitle">al mejor precio y con las mejores marcas! </div>
+                  </div>
+              </a>
+          </li>
+        </ul>
+        <div class="uk-modal-header">
+            <h2 id="registrar" class="uk-modal-title uk-nav-center">REGISTRATE</h2>
+        </div>
+        <div class="uk-modal-body">
+            <form [formGroup]="registerForm" (ngSubmit)="registerUser()" class="row">
+                <div class="col-md-6">
+                    <label for="username" class="col-form-label">Primer Nombre:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon-flip"></a>
+                        <input prinom="prinom" id="prinom" class="uk-input form-control" placeholder="Nombre" type="text" formControlName="prinom" required />
+                    </div>
+                    <div *ngIf="registerFormGet('prinom')?.errors && registerFormGet('prinom')?.touched" class="mb-3 text-danger">
+                        <div *ngIf="registerFormGet('prinom')?.errors?.['required']">El campo Nombre es obligatorio.</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="username" class="col-form-label">Primer Apellido:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon-flip"></a>
+                        <input prinom="priape" id="priape" class="uk-input" type="text" formControlName="priape" required />
+                    </div>
+
+                    <div *ngIf="registerFormGet('priape')?.errors && registerFormGet('priape')?.touched" class="mb-3 text-danger">
+                        <div *ngIf="registerFormGet('priape')?.errors?.['required']">El campo Apellido es obligatorio.</div>
+                    </div>
+                </div>
+                <div class="mb">
+                    <label for="nombreusu" class="col-form-label">Nombre de Usuario:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon uk-form-icon-flip" uk-tooltip="title: Caracteres alfanuméricos.<br>Mínimo 3 caracteres.<br>Máximo 16 caracteres.;; pos: bottom-right"><i uk-icon="info"></i></a>
+                        <input nombreusu="nombreusu" id="nombreusu" class="uk-input form-control" type="text" formControlName="nombreusu" required>
+                    </div>
+
+                    <div *ngIf="registerFormGet('nombreusu')?.errors && registerFormGet('nombreusu')?.touched" class="mb-3 text-danger">
+                        <div *ngIf="registerFormGet('nobreusu')?.errors?.['required']">El campo Nombre Usuario es obligatorio.</div>
+                    </div>
+                </div>
+                <div class="mb">
+                    <label  for="email" class="col-form-label">Correo Electronico:</label>
+                    <div class="uk-form-controls">
+                        <div class="uk-inline uk-width-1-1">
+                            <a class="uk-form-icon uk-form-icon-flip" uk-tooltip="title: Debe ser un correo electrónico válido.<br>Una cuenta por correo electrónico.; pos: bottom-right"><i uk-icon="info"></i></a>
+                            <input class="uk-input" name="email" type="text">
+                        </div>
+
+                        <div *ngIf="registerFormGet('email')?.errors && registerFormGet('email')?.touched" class="mb-3 text-danger">
+                            <div *ngIf="registerFormGet('email')?.errors?.['required']">El campo E-mail es obligatorio</div>
+                            <div *ngIf="registerFormGet('email')?.errors?.['pattern']">Ingrese un E-mail valido</div>
+                        </div>
+                    </div>
+                    
+                    <div style="color:aliceblue ;" id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                </div>
+                <div class="mb">
+                    <label for="password" class="col-form-label">Contraseña:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon uk-form-icon-flip" uk-tooltip="title: Mínimo 8 caracteres.; pos: bottom-right"><i uk-icon="info"></i></a>
+                        <input password="password" id="password" class="uk-input form-control" type="password" formControlName="password" required />
+                    </div>
+
+                    <div *ngIf="registerFormGet('password')?.errors && registerFormGet('password')?.touched"class="mb-3 text-danger">
+                        <div *ngIf="registerFormGet('password')?.errors?.['required']">El campo Contraseña es obligatorio.</div>
+                        <div *ngif="registerFormGet('password')?.errors?.['minlength']">La contraseña debe ser de al menos 6 caracteres.</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="confirmPass" class="col-form-label">Repetir Contraseña:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <a class="uk-form-icon uk-form-icon-flip" uk-tooltip="title: Debe coincidir con el campo de contraseña."><i uk-icon="info"></i></a>
+                        <input class="uk-input form-control" id="confirmPass" name="repeat_password" type="confirmPass" formControlName="confirmPassword" required />
+                    </div>
+
+                    <div *ngIf="registerFormGet('confirmPassword')?.errors && registerFormGet('confirmPassword')?.touched" class="mb-3 text-danger">
+                        <div *ngIf="registerFormGet('confirmPassword')?.errors?.['required']">>El campo Confirmar constraseña es obligatorio.</div>
+                        <div *ngIf="registerFormGet('confirmPassword')?.errors?.['minlength']">La contraseña debe ser de al menos 6 caracteres.</div>
+                        <div *ngIf="registerForm.controls['confirmPassword'].errors?.['passwordMismatch']">Las contraseñas no coinciden.</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <input type="submit" class="btn btn-primary btn-block" value="Registrarse" [disabled]="registerForm.invalid" />
+        </div>
+
+        <div id="modal-group-2" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+               <ul class="uk-navbar-nav">
+                  <li></li>
+                  <img id="logotipo" src="../../assets/logo.png" width="60" height="30" alt="">
+                  <li class="uk-active">
+                      <a style="color:aliceblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="#">
+                          <div>
+                              !Cada dia mas serca de nuestras ofertas no te
+                              <div class="uk-navbar-subtitle">los pierdas con nuestras nuevas novedades! </div>
+                          </div>
+                      </a>
+                  </li>
+                </ul>
+                <div class="uk-modal-header">
+                    <h2 id="registrar" class="uk-modal-title uk-nav-center">USUARIO</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="col-form-label">Nombre de Usuario:</label>
+                            <div class="uk-inline uk-width-1-1">
+                                <a class="uk-form-icon-flip"></a>
+                                <input class="uk-input" type="text">
+                            </div>
+                          </div>
+                      <div class="mb-4">
+                        <label for="password" class="col-form-label">Contraseña:</label>
+                        <div class="uk-inline uk-width-1-1">
+                            <a class="uk-form-icon-flip"></a>
+                            <input class="uk-input" type="password">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row aling-items--center">
+                                    <div class="col-2">
+                                        <a href="https://www.facebook.com/" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                                    </div>
+                                    <div class="col-9 text-center text">
+                                        <a id="link" href="https://www.facebook.com/">Facebook</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row aling-items--center">
+                                    <div class="col-2">
+                                        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S570435597%3A1664151546206652&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession" class="uk-icon-button  uk-margin-small-right" uk-icon="google"></a>
+                                    </div>
+                                    <div class="col-9 text-center text">
+                                        <a id="link" href="https://accounts.google.com/v3/signin/identifier?dsh=S570435597%3A1664151546206652&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession">Google</a> 
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+                    <div class="mb">
+                        <span>No tienes cuenta? <a href="#modal-group-1" uk-toggle>Registrate</a></span><br>
+                        <span><a href="#modal-group-3" uk-toggle>recuperar contraseña</a></span>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+                    <button class="uk-button uk-button-primary uk-modal-close" type="button">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-group-3" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+               <ul class="uk-navbar-nav">
+                  <li></li>
+                  <img id="logotipo" src="../../assets/logo.png" width="60" height="30" alt="">
+                  <li class="uk-active">
+                      <a style="color:aliceblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="#">
+                          <div>
+                              !Cada dia mas serca de nuestras ofertas no te
+                              <div class="uk-navbar-subtitle">los pierdas con nuestras nuevas novedades! </div>
+                          </div>
+                      </a>
+                  </li>
+                </ul>
+                <div class="uk-modal-header">
+                    <h2 id="registrar" class="uk-modal-title uk-nav-center">RECUPERACION DE CUENTA</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <form id="formulario">
+                        <div class="mb-3">
+                            <label  for="email" class="col-form-label">Correo Electronico:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <a class="uk-form-icon uk-form-icon-flip" uk-tooltip="title: Debe ser un correo electrónico válido.<br>Una cuenta por correo electrónico.; pos: bottom-right"><i uk-icon="info"></i></a>
+                                    <input class="uk-input" id="email" name="email" type="text">
+                                </div>
+                            </div>
+                          </div>
+                      <div class="mb-4">
+                        <label for="cel" class="col-form-label">Telefono:</label>
+                        <div class="uk-inline uk-width-1-1">
+                            <a class="uk-form-icon uk-form-icon-flip"></a>
+                            <input class="uk-input" name="cel" type="tel" ondrop="return false;" onpaste="return false;"
+                            onkeypress="return event.charCode>=48 && event.charCode<=57" minlength="5" maxlength="10" required>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="mb">
+                        <span>No tienes cuenta? <a href="#modal-group-1" uk-toggle>Registrate</a></span><br>
+                        <span><a href="#">recuperar contraseña</a></span>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Cancelar</a>
+                    <button class="uk-button uk-button-primary uk-modal-close" type="submit" value="Submit">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

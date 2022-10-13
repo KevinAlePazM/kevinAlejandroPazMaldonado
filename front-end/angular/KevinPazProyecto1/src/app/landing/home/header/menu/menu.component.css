@@ -1,0 +1,30 @@
+#logo{
+    height: 70px;
+}
+
+.offcanvas-header{
+    margin-bottom: -15px;
+}
+
+a.uk-button.uk-button-default.uk-navbar-center.uk-first-column {
+    padding-left: 132px;
+    padding-right: 132px;
+}
+
+.menu{
+    margin-top: 20px;
+}
+
+#titulo{
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#titulo3 {
+    color: black;
+    font-size: 15px;
+}
+span{
+    margin-right: 20px;
+}
